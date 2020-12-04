@@ -278,7 +278,7 @@ button {
 }
 
 .container-projects {
-	max-width: 1140px;
+	max-width: 1165px;
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -305,14 +305,28 @@ button {
 
 .project-tile {
 	max-width: 100%;
-	border-radius: 20px;
 	padding: 2px;
 	transition: all 0.3s ease-out 0s;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
-.project-tile:hover {
-	box-shadow: 0 0 11px rgba(117, 78, 249, 1);
+.project-item {
+	border: 1px solid;
+	margin-bottom: 2rem;
+	box-shadow: 0 0 11px rgba(117, 78, 249, 0.5);
+	border-radius: 10px;
 }
+
+.project-links {
+	text-align: center;
+	font-size: 1.8rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* .project-tile:hover {
+} */
 
 .cta-more {
 	display: flex;
@@ -544,5 +558,14 @@ button {
 
 	.single-contact {
 		margin-right: 1.5rem;
+	}
+
+	.project-grid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.project-item {
+		margin-right: 1rem;
 	}
 }
